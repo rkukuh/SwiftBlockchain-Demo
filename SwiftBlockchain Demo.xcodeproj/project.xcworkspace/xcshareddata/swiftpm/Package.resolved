@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "swiftblockchain",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/rkukuh/SwiftBlockchain",
+      "state" : {
+        "branch" : "dev",
+        "revision" : "6547ed819b5a971f7e9e1edb61fc4aee4b0f9176"
+      }
+    }
+  ],
+  "version" : 2
+}
