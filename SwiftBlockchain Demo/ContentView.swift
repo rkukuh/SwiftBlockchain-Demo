@@ -10,7 +10,7 @@ import SwiftBlockchain
 
 struct ContentView: View {
     
-    @State private var genesisBlock = Block.genesis
+    let genesisBlock = Block.genesis
     
     var body: some View {
         VStack {
