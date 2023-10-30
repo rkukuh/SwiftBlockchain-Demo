@@ -6,8 +6,12 @@
 //
 
 import SwiftUI
+import SwiftBlockchain
 
 struct ContentView: View {
+    
+    @State private var genesisBlock = Block.genesis
+    
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -16,7 +20,17 @@ struct ContentView: View {
             Text("Hello, world!")
         }
         .padding()
+        .onAppear {
+            print("=== Genesis Block ===")
+            print("Index: \(genesisBlock.index)")
+            print("Nonce: \(genesisBlock.nonce)")
+            print("Previous Hash: \(genesisBlock.previousHash)")
+            print("Current Hash: \(genesisBlock.hash)")
+            print("Timestamp: \(genesisBlock.timestamp)")
+            print("Data: \(genesisBlock.data)")
+        }
     }
+    
 }
 
 #Preview {

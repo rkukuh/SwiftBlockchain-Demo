@@ -11,6 +11,7 @@
 		4A196C142ADA9FD200B64819 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A196C132ADA9FD200B64819 /* ContentView.swift */; };
 		4A196C162ADA9FD400B64819 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A196C152ADA9FD400B64819 /* Assets.xcassets */; };
 		4A196C192ADA9FD400B64819 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A196C182ADA9FD400B64819 /* Preview Assets.xcassets */; };
+		4A2840C62AEF139500E67C01 /* SwiftBlockchain in Frameworks */ = {isa = PBXBuildFile; productRef = 4A2840C52AEF139500E67C01 /* SwiftBlockchain */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A2840C62AEF139500E67C01 /* SwiftBlockchain in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = "SwiftBlockchain Demo";
+			packageProductDependencies = (
+				4A2840C52AEF139500E67C01 /* SwiftBlockchain */,
+			);
 			productName = "SwiftBlockchain Demo";
 			productReference = 4A196C0E2ADA9FD200B64819 /* SwiftBlockchain Demo.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 4A196C052ADA9FD200B64819;
+			packageReferences = (
+				4A2840C42AEF139500E67C01 /* XCRemoteSwiftPackageReference "SwiftBlockchain" */,
+			);
 			productRefGroup = 4A196C0F2ADA9FD200B64819 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -344,6 +352,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4A2840C42AEF139500E67C01 /* XCRemoteSwiftPackageReference "SwiftBlockchain" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rkukuh/SwiftBlockchain";
+			requirement = {
+				branch = dev;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4A2840C52AEF139500E67C01 /* SwiftBlockchain */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4A2840C42AEF139500E67C01 /* XCRemoteSwiftPackageReference "SwiftBlockchain" */;
+			productName = SwiftBlockchain;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4A196C062ADA9FD200B64819 /* Project object */;
 }
